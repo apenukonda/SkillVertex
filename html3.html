@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(195, 240, 252) ;">
+    <h1 style="color:red">REGISTRATION</h1>
+    
+<form>
+    <fieldset>
+        <legend>LOGIN DETAILS</legend>
+    <label for="fname"><b>FIRST NAME</b></label><br>
+    <input id="fname" name="first name" type="text" placeholder="FIRST NAME" autofocus autocomplete="on" required><br>
+    <label for="lname"><b>LAST NAME</b></label><br>
+    <input id="lname" name="last name" type="text"  disable placeholder="SECOND NAME" autofocus autocomplete="on" required><br>
+    <label for="usn"><b>USN NUMBER</b></label><br>
+    <input id="usn" name="usn no" type="text" placeholder="USN" autofocus autocomplete="on" required><br>
+    <label for="adr"><b>ADDRESS</b></label><br>
+    <input id="adr" name="adress" type="adress" placeholder="ADDRESS" autofocus autocomplete="on" required><br>
+    <label for="dob"><b>DOB</b></label><br>
+    <input id="dob" name="birthday" type="date" placeholder="DOB" autofocus autocomplete="on" required><br>
+    <label for="ph"><b>PHONE NUMBER</b></label><br>
+    <input id="ph" name="ph no" type="numbers" maxlength="10" placeholder="PHONE NUMBER" autofocus autocomplete="on" required><br>
+    <label for="em"><b>EMAIL-ID</b></label><br>
+    <input id="em" name="em-i" type="email" placeholder="EMAIL-ID" autofocus autocomplete="on" required><br> 
+    <label for="color"><b>COLOR</b></label><br>
+    <input id="color" name="color" type="color" placeholder="color"autofocus autocomplete="on" required><br>
+    <label for="sports">SPORTS</label>
+    <select id="sports" multiple required>
+    <option value="VB">VOLLEY BALL</option>
+    <option value="TB">THROW BALL</option>
+    <option value="BB">BASKET BALL</option>
+    <option value="HB">HAND BALL</option>
+    <option value="FB"> FOOTBALL</option>
+    <option value="CH">CHESS</option>
+    <option value="C">CRICKET</option>
+</select>
+</fieldset>
+<fieldset>
+    <legend>COURSES</legend>
+    <input id="cse" name="cse" type="checkbox">
+    <label for="cse"><b>CSE</b></label>
+    <input id="cst" name="cst" type="checkbox">
+    <label for="cse"><b>CST</b></label>
+    <input id="ec" name="ec" type="checkbox">
+    <label for="ec"><b>EC</b></label>
+    <input id="eee" name="eee" type="checkbox">
+    <label for="eee"><b>EEE</b></label>
+    <input id="ai-ml" name="ai-ml" type="checkbox">
+    <label for="ai-ml"><b>AI-ML</b></label>
+</fieldset>
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+
+
+</form>    
+</body>
+</html>

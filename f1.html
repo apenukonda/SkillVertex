@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi-Kishan</title>
+</head>
+<style>
+    
+    header{
+        background-color: rgba(148, 25, 167, 0.903);
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        right: 0%;
+        position: absolute;
+        padding-right: 30px;
+    }
+    header li{
+        display: inline-block; 
+        list-style: none;
+        justify-content: space-between;
+        padding: 30px ;
+       
+        
+    }
+    header button{
+        border: 2px;
+        border-radius: 20px;
+        padding: 10px 10px;
+        background-color: white;
+            
+    }
+    header button:hover{
+        background-color: rgb(171, 171, 239);
+    }
+    #i1{
+        height: 80vh;
+        width: 50vw;
+        padding-top: 10px;
+        float: right;
+        padding-right: 40px;
+    }
+    #i2{
+        height: 40vh;
+        width: 30%;
+        padding-left: 20px;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80px;
+        padding-left: 30px;
+        margin: 0%;
+        margin-top: -3%;
+        color: white;
+        position: absolute;
+       
+        
+    }
+    .purple{
+        background-color: rgba(148, 25, 167, 0.903);
+        
+    }
+    #t{
+        margin-left: 30px;
+        padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: -10%;
+    border-radius: 50px;
+    }
+    #search{
+        margin: 0%;
+        padding: 0%;
+        height: 40px;
+        width: 40px;
+        margin-bottom: -1%;
+        margin-left: -50px;
+    }
+    .textbox{
+        background-color: rgb(98, 2, 115);
+        height: 20vh;
+        width: 87vw;
+        padding: 50px;
+        color: white;
+        margin-top: 40px;
+        margin-left: 30px;
+        
+
+    }
+    .textbox pre{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding-left: 20px;
+        
+        
+    }
+    #b3{
+        padding: 30px;
+        margin-top: 30px;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        height: 550px;
+        width: 450px;
+        
+    }
+    .correct{
+        float: right;
+        color: white;
+        margin-right: 25%;
+        margin-top: 10%;
+    }
+    #big{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 50px;
+        padding: 0%;
+        margin: 0%;
+        margin-right: 50px;
+    }
+    #lorem{
+        padding: 0%;
+        margin: 0%;
+        font-weight: lighter;
+    }
+    .box3{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(204, 143, 1);
+        float: right;
+        margin: 10px;
+        position: relative;
+    }
+    .box2{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(204, 143, 1);
+        float: right;
+        margin: 10px;
+    }
+    .box1{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(204, 143, 1);
+        float: right;
+        margin: 10px;
+    }
+    #boxes{
+        margin-right: 10%;
+        margin-top: -10%;
+    }
+    .box1 pre{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding-top: 150px;
+        margin-right: 30px;
+        width: 10px;
+        text-align: left;
+
+        
+        
+    }
+    .box1 a{
+        opacity: 0.4;
+        font-size: 30px;
+        padding-left: 120px;
+       
+    }
+    .box2 pre{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding-top: 150px;
+        margin-right: 30px;
+        width: 10px;
+        text-align: left;
+
+        
+        
+    }
+    .box2 a{
+        opacity: 0.4;
+        font-size: 30px;
+        padding-left: 120px;
+       
+    }
+    .box3 pre{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding-top: 150px;
+        margin-right: 30px;
+        width: 10px;
+        text-align: left;
+
+        
+        
+    }
+    .box3 a{
+        opacity: 0.4;
+        font-size: 30px;
+        padding-left: 120px;
+       
+    }
+    #p1{
+        height: 450px;
+        width: 400px;
+        float: right;
+        padding-right: 5%;
+        margin-top: 3%;
+        margin: 0%;
+    }
+    .white{
+        background-color: white;
+    }
+    .white h1{
+        color: black;
+        margin-top: 30%;
+        position: relative;
+        margin-right: 30px;
+        font-size: 79px;
+    }
+    .white span{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+        font-size: 30px;
+
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-area: auto;
+        background-color: rgb(221, 220, 220);
+        margin-top: 20%;
+        padding-left: 70px;
+        height: 50vh;
+        padding-top: 40px;
+    }
+    footer p{
+        color: rgb(137, 137, 137);
+    }
+    #p2{
+        padding: 30px;
+        float: left;
+        padding-top: 60px;
+        width: 40vw;
+        height: 380px;
+    }
+    #para{
+       margin-top: 15%;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-left: 50%;
+       font-size: 20px;
+    }
+    #para p{
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+    #p3{
+        float: right;
+        padding: 50px;
+        margin-top: 5%;
+        width: 700px;
+        height: 350px;
+    }
+    #para2{
+        margin-top: 8%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 30px;
+        position: relative;
+    }
+    #para2 p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+
+    #para3{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 50%;
+        position: relative;
+    }
+    #para3 p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin: 0%;
+    }
+    #end{
+        color: black;
+        padding: 30px;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+
+    }
+    #final{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 30px;
+        margin: 0%;
+        font-size: 50px;
+        margin-top: -5%;
+        font-weight: 100;
+    }
+
+    #final2{
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        margin-left: 40%;
+        margin-top: -3%;
+        margin-bottom: 0%;
+    }
+
+    
+   
+   
+   
+
+
+</style>
+<body>
+    <header>
+        <h2>Mi-Kishan</h2>
+        <div>
+            <li>Service</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <button>Sign up</button>
+        </div>
+    </header>
+    <div class="purple">
+    <img src="C:\Users\aryan\OneDrive\Desktop\skillshit\assignment\building.jpg" id="i1">
+    <img src="C:\Users\aryan\Downloads\building2.jpg" id="i2">
+    <h1><pre>A Creative
+Company That's More</pre></h1>
+    <input type="text" id="t" size="80" placeholder="www.gmail.com">
+    <img src="C:\Users\aryan\Downloads\search.png" id="search">
+    
+    <div class="textbox">
+
+ <pre>An agency refers to a relationship comprising two parties, where 
+one party, called the agent, represents the other party, called the 
+principal. An agent is usually hired by the principal to perform an 
+act or service on his behalf.
+
+by Founder
+Majarul Islam</pre>
+    </div>
+
+    <img src="C:\Users\aryan\Downloads\building3.jpeg" id="b3">
+    <div class="correct">
+        <pre id="big" >
+    Correct decision is 
+    the main purpose
+    of this agency.
+        </pre>
+       <pre id="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Hic quidem animi, quis perferendis, fugit nam, soluta magni aliquam 
+        odio enim possimus aperiam atque ut error facilis perspiciatis 
+        consequuntur magnam. Sit!
+        </pre>
+    </div>
+    <section id="boxes">
+    <div class="box1">
+        <pre><a>03</a>
+              Project</pre>
+
+    </div>
+    <div class="box2">
+        <pre><a>02</a>
+              Experiment</pre>
+
+    </div>
+    <div class="box3">
+       <pre> <a>01</a>
+              Planning</pre>
+
+    </div>
+    </section>
+    
+
+    </div>
+    <div class="white">
+
+    <img src="C:\Users\aryan\Downloads\pic.jpg" id="p1">
+    <h1>
+        Here Goes a title about the cases datdash has on here
+    </h1>
+    <span>Check out our cases     ------ -></span>
+    
+    </div>
+    <img src="C:\Users\aryan\Downloads\pic1.jpg" id="p2">
+
+    <section id="para">
+    <h2>Checkout our classes</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ratione temporibus quisquam doloremque nobis autem veritatis aut nemo fugiat necessitatibus! Animi rerum illum eaque inventore ducimus aliquid unde molestias tempora.</p>
+    </section>
+
+    <img src="C:\Users\aryan\Downloads\pic2.jpg" id="p3">
+    <section id="para2">
+    <h2>Check out our cases</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore voluptas a officiis natus autem, necessitatibus molestiae laudantium repellat illo non, voluptatem tenetur sequi, explicabo optio iure ad enim eaque. Asperiores.</p>
+    </section>
+
+    <section id="para3">
+        <h2>Check out our cases</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore voluptas a officiis natus autem, necessitatibus molestiae laudantium repellat illo non, voluptatem tenetur sequi, explicabo optio iure ad enim eaque. Asperiores.</p>
+        </section>
+
+    <pre><h2 id="end">All you need to do is follow
+our steps
+    </h2></pre>
+
+    <p id="final">Concept</p>
+    <p id="final2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus quas neque mollitia ipsum corrupti in quibusdam, minima rerum autem, libero quidem eum tenetur corporis molestiae provident. Quia, numquam earum.</p>
+
+
+    <footer>
+        <div>
+            <h2>Product</h2>
+            <p>Icon Design</p>
+            <p>Logo Design</p>
+            <p>UI/UX Design</p>
+        </div>
+        <div>
+            <h2>Resources</h2>
+            <p>Blog</p>
+            <p>Support</p>
+            <p>Newsletter</p>
+        </div>
+        <div>
+            <h2>Community</h2>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>Stack</p>
+            <p>Dribble</p>
+        </div>
+        <div>
+            <h2>Support</h2>
+            <p>My Account</p>
+            <p>Help & Support</p>
+            <p>Contact Us</p>
+        </div>
+    </footer>
+   
+    
+    
+</body>
+</html>
